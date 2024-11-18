@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#gameCanvas {
+    display: block;
+    border: 2px solid #000;
+}
+
+#startOverlay, #endOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+#startOverlay h1, #endOverlay h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#startOverlay label, #endOverlay label {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#startOverlay input {
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 60px;
+    text-align: center;
+}
+
+#startOverlay button, #endOverlay button {
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
